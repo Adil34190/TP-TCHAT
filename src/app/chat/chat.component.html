@@ -1,0 +1,11 @@
+<div *ngFor ="let message of messages">
+    {{message}}
+</div>
+
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="chat..." [(ngModel)]="message" >
+    </mat-form-field>
+    <button mat-button color="primary" (click) = "addMessage(message)">Valider</button>
+  </form>
+
